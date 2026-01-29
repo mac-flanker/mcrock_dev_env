@@ -23,6 +23,7 @@
     goose-cli
     nixd # nix language server
     nixfmt
+    ollama
     poetry
     python313
     python313Packages.python-lsp-server
