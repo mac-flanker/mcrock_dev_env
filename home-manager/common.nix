@@ -20,6 +20,7 @@
 
 # Add packages that aren't supported by home-manager here
   home.packages = with pkgs; [
+    goose-cli
     nixd # nix language server
     nixfmt
     poetry
