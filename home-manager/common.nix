@@ -34,6 +34,7 @@
     ./git.nix
     ./ghostty.nix 
     ./nushell.nix
+    ./zed.nix
     ./zsh.nix
   ];
 
