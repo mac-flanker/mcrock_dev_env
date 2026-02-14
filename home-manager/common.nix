@@ -25,6 +25,7 @@
     nixfmt
     ollama
     poetry
+    pyright
     python313
     python313Packages.python-lsp-server
     rustup
