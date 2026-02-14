@@ -23,6 +23,7 @@
     goose-cli
     nixd # nix language server
     nixfmt
+    nodejs
     ollama
     poetry
     pyright
