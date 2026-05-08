@@ -20,6 +20,7 @@
 
 # Add packages that aren't supported by home-manager here
   home.packages = with pkgs; [
+    bacon
     goose-cli
     nixd # nix language server
     nixfmt
@@ -35,6 +36,7 @@
   imports = [
     ./git.nix
     ./ghostty.nix 
+    ./neovim
     ./nushell.nix
     ./zsh.nix
   ];

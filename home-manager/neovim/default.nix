@@ -13,13 +13,13 @@
       pkgs.rust-analyzer
       pkgs.tree-sitter
     ];
-    extraPython3Packages = [
-      jupyter-client
-      nbformat
-      pynvim
-      pypercli
-    ];
-  }
+    extraPython3Packages = 
+      ps: with ps; [
+        nbformat
+        pynvim
+        pyperclip
+      ];
+  };
   xdg.configFile."nvim" = {
     source = ./nvim;
     recursive = true;
