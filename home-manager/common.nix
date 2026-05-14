@@ -26,6 +26,8 @@
     nixfmt
     nodejs
     ollama
+    picocom
+    platformio
     poetry
     pyright
     python313
