@@ -29,8 +29,9 @@
     picocom
     poetry
     pyright
-    python313
+    python313Packages.pip
     python313Packages.python-lsp-server
+    python313Packages.virtualenv
     rustup
   ];
 
