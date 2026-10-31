@@ -65,6 +65,35 @@
             }
           ];
         };
+        # MainLinuxMachine
+        "emcee-linux-pc" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system_linux};
+          extraSpecialArgs = {
+            inherit
+              inputs
+              outputs
+              theme
+              font-family
+              ;
+          };
+          # > Our main home-manager configuration file < 
+          modules = [
+            {
+              imports = [
+                ./my_system.nix
+                ./home-manager/common.nix
+              ];
+              config = {
+                mySystem = {
+                  username = "mike";
+                  fullname = "Mike Crocker";
+                  email = "mikaelcrocker@gmail.com";
+                  homeDirectory = "/home/mike";
+                };
+              };
+            }
+          ];
+        };
       };
     };  
 }
