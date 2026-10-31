@@ -1,7 +1,7 @@
 { pkgs, ...}:
 {
-  home.packages = [ pkgs.nushell pkgs.ghostty ];
+  home.packages = [ pkgs.nushell ];
   xdg.configFile."ghostty/config".text = ''
-    command = nu
+    command = ${pkgs.nushell}/bin/nu
   '';
 }
