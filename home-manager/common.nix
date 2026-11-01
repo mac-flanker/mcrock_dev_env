@@ -21,18 +21,20 @@
 # Add packages that aren't supported by home-manager here
   home.packages = with pkgs; [
     bacon
+    gcc
     goose-cli
     nixd # nix language server
     nixfmt
     nodejs
     ollama
     picocom
-    poetry
     pyright
     python313Packages.pip
     python313Packages.python-lsp-server
     python313Packages.virtualenv
     rustup
+    uv
+    zoxide
   ];
 
   imports = [

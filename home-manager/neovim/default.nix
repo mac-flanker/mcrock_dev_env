@@ -7,6 +7,7 @@
     vimAlias = true;
     extraLuaPackages = ps: [ ps.magick ];
     extraPackages = [
+      pkgs.gcc
       pkgs.imagemagick
       pkgs.pyright
       pkgs.ruff
